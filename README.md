@@ -54,12 +54,12 @@ This path tracer achieves its high performance through several fundamental GPU p
 *   **C++17 Compiler** (MSVC 2019+ / Visual Studio 2022)
 
 ### ⚠️ Space-in-Path Windows Bug Bypass
-`nvcc` has a known limitation where spaces in the directory path (e.g., `C:\Users\Suryadeep Singh\Downloads\cuda-raytracer`) cause compilation/linking errors like `c1xx: fatal error C1083`. 
+`nvcc` has a known limitation where spaces in the directory path (e.g., `C:\Users\L\Downloads\cuda-raytracer`) cause compilation/linking errors like `c1xx: fatal error C1083`. 
 
 To bypass this, map the project directory to a virtual drive letter (such as `Z:`) that has no spaces:
 ```powershell
 # Map project folder to Z: drive
-subst Z: "C:\Users\Suryadeep Singh\Downloads\cuda-raytracer"
+subst Z: "C:\Users\L\Downloads\cuda-raytracer"
 ```
 
 ### 1. Build using the Automated Script
