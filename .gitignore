@@ -1,0 +1,43 @@
+# Build artifacts
+build/
+out/
+.vs/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.exe
+*.o
+*.so
+*.dll
+
+# Rendered output
+renders/*.ppm
+renders/*.gif
+!renders/.gitkeep
+!renders/baseline_render.png
+!renders/gpu_render.png
+
+
+# CUDA
+*.cubin
+*.ptx
+*.fatbin
+*.cuobj
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+Makefile
+
+# IDE
+.vscode/settings.json
+.idea/
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
